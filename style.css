@@ -1,0 +1,82 @@
+body {
+    background-color: #800e13;
+
+}
+
+form {
+    border: white 5px solid;
+    border-radius: 5%;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+
+
+
+
+
+}
+
+.userpass input {
+    width: 240px;
+    border-radius: 20px;
+    height: 40px;
+    margin: 15px;
+    background-color: #fefae0;
+    color: #283618;
+    font-weight: bold;
+    padding-left: 9px;
+    font-family: monospace;
+    font-size: 15px;
+
+
+
+
+
+
+}
+
+.userpass input::placeholder {
+    color: black;
+    font-weight: bold;
+font-family: monospace;
+padding-left: 25%;
+}
+
+
+header{
+    color: #fefae0;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.userpass input[type="submit"] {
+    width: 130px;
+    position:relative ;
+    left: 22%;
+
+}
+
+
+
+.img{
+    width: 400px;
+    height: 160px;
+    position: absolute;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px ;
+
+}
